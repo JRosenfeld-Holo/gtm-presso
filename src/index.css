@@ -1,0 +1,124 @@
+/* ============================================================
+   FONT FACES
+   ============================================================ */
+@font-face {
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roobert';
+  src: url('/fonts/Roobert-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MessinaSansMono';
+  src: url('/fonts/MessinaSansMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MessinaSansMono';
+  src: url('/fonts/MessinaSansMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================ */
+:root {
+  --color-bg:        #00040F;
+  --color-lime:      #bffd11;
+  --color-cyan:      #53F2FA;
+  --color-gray:      #3A3C46;
+  --color-white:     #FFFFFF;
+  --color-teal:      #106468;
+  --color-olive:     #4C6810;
+
+  --glow-lime:       0 0 16px rgba(191, 253, 17, 0.35), 0 0 40px rgba(191, 253, 17, 0.15), 0 0 80px rgba(191, 253, 17, 0.07);
+  --glow-lime-hover: 0 0 24px rgba(191, 253, 17, 0.55), 0 0 64px rgba(191, 253, 17, 0.25);
+  --glow-cyan:       0 0 16px rgba(83, 242, 250, 0.35), 0 0 40px rgba(83, 242, 250, 0.15);
+  --glow-lime-card:  0 0 0 1px rgba(191, 253, 17, 0.08), inset 0 1px 0 rgba(191, 253, 17, 0.06);
+
+  --font-roobert:    'Roobert', system-ui, sans-serif;
+  --font-mono:       'MessinaSansMono', 'Courier New', monospace;
+
+  --transition-fast: 180ms ease;
+  --transition-base: 280ms ease;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-roobert);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 52px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(191, 253, 17, 0.2); border-radius: 2px; }
+
+/* ============================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+button { cursor: pointer; }
