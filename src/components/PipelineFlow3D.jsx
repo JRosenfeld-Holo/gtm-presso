@@ -23,6 +23,7 @@ export default function PipelineFlow3D() {
   const dimsRef = useRef(null)
   const [dims, setDims] = useState(null)
   const [hoveredNode, setHoveredNode] = useState(null)  // null | 'center' | 0..N-1
+  const hoveredNodeRef = useRef(null)
   const angleRef = useRef(0)
   const timeRef = useRef(0)
 
@@ -53,7 +54,8 @@ export default function PipelineFlow3D() {
   useAnimationFrame((_, delta) => {
     if (!dimsRef.current) return
     timeRef.current += delta
-    angleRef.current += delta * ORBIT_SPEED
+    const paused = hoveredNodeRef.current !== null
+    if (!paused) angleRef.current += delta * ORBIT_SPEED
 
     const time = timeRef.current
     if (time > 80)
@@ -63,9 +65,11 @@ export default function PipelineFlow3D() {
         entranceRef.current[i + 1] = Math.min(entranceRef.current[i + 1] + delta / 480, 1)
     }
 
-    for (let i = 0; i < N; i++) {
-      for (let j = 0; j < PARTICLE_COUNT; j++) {
-        particlesRef.current[i][j] = (particlesRef.current[i][j] + delta * 0.00028) % 1
+    if (!paused) {
+      for (let i = 0; i < N; i++) {
+        for (let j = 0; j < PARTICLE_COUNT; j++) {
+          particlesRef.current[i][j] = (particlesRef.current[i][j] + delta * 0.00028) % 1
+        }
       }
     }
     forceUpdate()
@@ -157,8 +161,8 @@ export default function PipelineFlow3D() {
 
       {/* Center PIPELINE node */}
       <div
-        onMouseEnter={() => setHoveredNode('center')}
-        onMouseLeave={() => setHoveredNode(null)}
+        onMouseEnter={() => { hoveredNodeRef.current = 'center'; setHoveredNode('center') }}
+        onMouseLeave={() => { hoveredNodeRef.current = null; setHoveredNode(null) }}
         style={{
           position: 'absolute', left: cx, top: cy,
           transform: `translate(-50%, -50%) scale(${0.5 + 0.5 * centerEntrance})`,
@@ -209,8 +213,8 @@ export default function PipelineFlow3D() {
       {nodes.map((node, i) => (
         <div
           key={node.label}
-          onMouseEnter={() => setHoveredNode(i)}
-          onMouseLeave={() => setHoveredNode(null)}
+          onMouseEnter={() => { hoveredNodeRef.current = i; setHoveredNode(i) }}
+          onMouseLeave={() => { hoveredNodeRef.current = null; setHoveredNode(null) }}
           style={{
             position: 'absolute', left: node.x, top: node.y,
             transform: `translate(-50%, -50%) scale(${node.scale})`,
