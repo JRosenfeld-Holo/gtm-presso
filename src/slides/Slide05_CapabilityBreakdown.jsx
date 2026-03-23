@@ -104,7 +104,7 @@ export default function Slide05() {
               <div style={{ width: 220, flexShrink: 0, marginRight: 28 }}>
                 <MonoLabel
                   style={{
-                    fontSize: 10.5,
+                    fontSize: 13,
                     color: 'var(--color-lime)',
                     lineHeight: 1.4,
                     textShadow: isHovered
@@ -137,7 +137,7 @@ export default function Slide05() {
                       padding: '4px 11px',
                       border: '1px solid rgba(191,253,17,0.2)',
                       borderRadius: 20,
-                      fontSize: 11.5,
+                      fontSize: 14,
                       fontWeight: 600,
                       color: 'rgba(255,255,255,0.62)',
                       background: 'rgba(191,253,17,0.04)',

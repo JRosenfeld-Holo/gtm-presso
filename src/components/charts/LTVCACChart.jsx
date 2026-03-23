@@ -120,7 +120,7 @@ export default function LTVCACChart({ data }) {
                 textAnchor="middle"
                 fill={LIME}
                 fontFamily="MessinaSansMono, monospace"
-                fontSize="11"
+                fontSize="13"
                 fontWeight="600"
                 letterSpacing="0.04em"
                 initial={{ opacity: 0 }}
@@ -152,7 +152,7 @@ export default function LTVCACChart({ data }) {
             textAnchor="middle"
             fill="rgba(255,255,255,0.45)"
             fontFamily="MessinaSansMono, monospace"
-            fontSize="10"
+            fontSize="12"
             letterSpacing="0.05em"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

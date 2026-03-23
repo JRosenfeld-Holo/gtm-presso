@@ -30,7 +30,7 @@ export default function Slide03() {
         </h2>
         <p
           style={{
-            fontSize: 15,
+            fontSize: 18,
             color: 'rgba(255,255,255,0.55)',
             maxWidth: 660,
             lineHeight: 1.65,
@@ -83,14 +83,14 @@ export default function Slide03() {
             />
 
             {/* Title */}
-            <MonoLabel style={{ fontSize: 10, color: 'var(--color-lime)', marginBottom: 12, display: 'block' }}>
+            <MonoLabel style={{ fontSize: 12, color: 'var(--color-lime)', marginBottom: 12, display: 'block' }}>
               {cap.title}
             </MonoLabel>
 
             {/* Body */}
             <p
               style={{
-                fontSize: 14.5,
+                fontSize: 17,
                 color: 'rgba(255,255,255,0.72)',
                 lineHeight: 1.7,
                 fontWeight: 400,

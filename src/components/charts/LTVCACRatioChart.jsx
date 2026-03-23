@@ -81,7 +81,7 @@ export default function LTVCACRatioChart({ data }) {
           textAnchor="middle"
           fill={LIME}
           fontFamily="MessinaSansMono, monospace"
-          fontSize="13"
+          fontSize="15"
           fontWeight="700"
           letterSpacing="0.12em"
         >
@@ -96,7 +96,7 @@ export default function LTVCACRatioChart({ data }) {
           textAnchor="end"
           fill="rgba(255,255,255,0.4)"
           fontFamily="MessinaSansMono, monospace"
-          fontSize="10"
+          fontSize="12"
           letterSpacing="0.04em"
         >
           LTV ($K)
@@ -128,7 +128,7 @@ export default function LTVCACRatioChart({ data }) {
             textAnchor="middle"
             fill="rgba(255,255,255,0.55)"
             fontFamily="MessinaSansMono, monospace"
-            fontSize="11"
+            fontSize="13"
             fontWeight="500"
             opacity={Math.min(1, (progress[i] || 0) * 4)}
           >
@@ -143,7 +143,7 @@ export default function LTVCACRatioChart({ data }) {
           textAnchor="end"
           fill="rgba(255,255,255,0.4)"
           fontFamily="MessinaSansMono, monospace"
-          fontSize="10"
+          fontSize="12"
           letterSpacing="0.04em"
         >
           CAC($K)
@@ -156,7 +156,7 @@ export default function LTVCACRatioChart({ data }) {
             textAnchor="middle"
             fill="rgba(255,255,255,0.55)"
             fontFamily="MessinaSansMono, monospace"
-            fontSize="11"
+            fontSize="13"
             fontWeight="500"
             opacity={Math.min(1, (progress[i] || 0) * 4)}
           >
@@ -198,7 +198,7 @@ export default function LTVCACRatioChart({ data }) {
                   textAnchor="middle"
                   fill={LIME}
                   fontFamily="MessinaSansMono, monospace"
-                  fontSize="13"
+                  fontSize="15"
                   fontWeight="600"
                   opacity={labelOpacity}
                 >
@@ -228,7 +228,7 @@ export default function LTVCACRatioChart({ data }) {
             textAnchor="middle"
             fill="rgba(255,255,255,0.45)"
             fontFamily="MessinaSansMono, monospace"
-            fontSize="11"
+            fontSize="13"
             letterSpacing="0.04em"
             opacity={Math.max(0, (progress[i] || 0) - 0.5) * 2}
           >

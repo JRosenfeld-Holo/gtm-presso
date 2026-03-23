@@ -185,7 +185,7 @@ export default function PipelineFlow3D() {
           transition: 'transform 0.22s ease, border-color 0.22s ease, filter 0.22s ease, background 0.22s ease',
         }}>
           <div style={{
-            fontSize: 18, fontWeight: 700, letterSpacing: '0.07em',
+            fontSize: 21, fontWeight: 700, letterSpacing: '0.07em',
             color: '#bffd11',
             textShadow: isCenterHovered
               ? '0 0 24px rgba(191,253,17,0.9)'
@@ -197,7 +197,7 @@ export default function PipelineFlow3D() {
           </div>
           {CENTER_SUBS.map(s => (
             <div key={s} style={{
-              fontSize: 10.5, letterSpacing: '0.06em', lineHeight: 1.8,
+              fontSize: 13, letterSpacing: '0.06em', lineHeight: 1.8,
               color: isCenterHovered ? 'rgba(191,253,17,0.85)' : 'rgba(191,253,17,0.55)',
               transition: 'color 0.22s ease',
             }}>{s}</div>
@@ -241,7 +241,7 @@ export default function PipelineFlow3D() {
             transition: 'transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease, background 0.2s ease',
           }}>
             <div style={{
-              fontSize: 12, fontWeight: 600, letterSpacing: '0.05em',
+              fontSize: 14, fontWeight: 600, letterSpacing: '0.05em',
               color: node.isHovered ? 'rgba(255,255,255,0.98)' : `rgba(255,255,255,${0.58 + 0.37 * node.depth})`,
               textShadow: node.isHovered ? '0 0 16px rgba(191,253,17,0.4)' : 'none',
               marginBottom: 4,
@@ -251,7 +251,7 @@ export default function PipelineFlow3D() {
             </div>
             {node.subs.map(s => (
               <div key={s} style={{
-                fontSize: 9.5, letterSpacing: '0.04em', lineHeight: 1.6,
+                fontSize: 12, letterSpacing: '0.04em', lineHeight: 1.6,
                 color: node.isHovered
                   ? 'rgba(255,255,255,0.72)'
                   : `rgba(255,255,255,${0.26 + 0.19 * node.depth})`,

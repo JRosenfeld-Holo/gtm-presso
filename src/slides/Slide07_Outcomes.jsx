@@ -34,7 +34,7 @@ export default function Slide07() {
         >
           Measurable payback on both return and velocity.
         </h2>
-        <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,0.5)', maxWidth: 700, lineHeight: 1.6 }}>
+        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', maxWidth: 700, lineHeight: 1.6 }}>
           Every tactic is evaluated against pipeline contribution, cost efficiency, and
           time-to-payback. Capital reallocates dynamically to the highest-performing channels.
         </p>
@@ -77,7 +77,7 @@ export default function Slide07() {
           <Zoomable
             content={
               <>
-                <MonoLabel style={{ fontSize: 11, color: '#bffd11', display: 'block', marginBottom: 10, fontWeight: 600, letterSpacing: '0.1em' }}>
+                <MonoLabel style={{ fontSize: 13, color: '#bffd11', display: 'block', marginBottom: 10, fontWeight: 600, letterSpacing: '0.1em' }}>
                   LTV:CAC
                 </MonoLabel>
                 <div style={{ flex: 1, minHeight: 0 }}>
@@ -103,7 +103,7 @@ export default function Slide07() {
               }}
             >
               <MonoLabel style={{
-                fontSize: 9,
+                fontSize: 11,
                 color: hoveredChart === 'trend' ? '#bffd11' : 'rgba(191,253,17,0.65)',
                 display: 'block', marginBottom: 6, marginLeft: 12, fontWeight: 600,
                 transition: 'color 0.22s ease',
@@ -120,7 +120,7 @@ export default function Slide07() {
           <Zoomable
             content={
               <>
-                <MonoLabel style={{ fontSize: 11, color: '#53F2FA', display: 'block', marginBottom: 10, fontWeight: 600, letterSpacing: '0.1em' }}>
+                <MonoLabel style={{ fontSize: 13, color: '#53F2FA', display: 'block', marginBottom: 10, fontWeight: 600, letterSpacing: '0.1em' }}>
                   CAC PAYBACK (MONTHS)
                 </MonoLabel>
                 <div style={{ flex: 1, minHeight: 0 }}>
@@ -146,7 +146,7 @@ export default function Slide07() {
               }}
             >
               <MonoLabel style={{
-                fontSize: 9,
+                fontSize: 11,
                 color: hoveredChart === 'payback' ? '#53F2FA' : 'rgba(83,242,250,0.65)',
                 display: 'block', marginBottom: 6, marginLeft: 12, fontWeight: 600,
                 transition: 'color 0.22s ease',
@@ -186,7 +186,7 @@ export default function Slide07() {
               }}
             >
               <MonoLabel style={{
-                fontSize: 7,
+                fontSize: 10,
                 color: isHov ? 'rgba(255,255,255,0.55)' : 'rgba(255,255,255,0.35)',
                 display: 'block', marginBottom: 6, whiteSpace: 'nowrap',
                 transition: 'color 0.22s ease',
@@ -196,7 +196,7 @@ export default function Slide07() {
               <div
                 style={{
                   fontFamily: 'var(--font-mono)',
-                  fontSize: 24,
+                  fontSize: 28,
                   fontWeight: 600,
                   color: 'var(--color-white)',
                   lineHeight: 1,

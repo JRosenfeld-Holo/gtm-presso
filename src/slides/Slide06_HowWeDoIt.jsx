@@ -28,7 +28,7 @@ export default function Slide06() {
         >
           A builder culture optimized for speed and continuous improvement
         </h2>
-        <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.5)', maxWidth: 660, lineHeight: 1.6 }}>
+        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.5)', maxWidth: 660, lineHeight: 1.6 }}>
           Hologram's GTM team operates like a product team: lean, instrumented, and oriented toward
           building the systems that generate pipeline rather than just running them.
         </p>
@@ -90,7 +90,7 @@ export default function Slide06() {
                   <span
                     style={{
                       fontFamily: 'var(--font-mono)',
-                      fontSize: 14,
+                      fontSize: 16,
                       fontWeight: 700,
                       color: 'var(--color-lime)',
                       letterSpacing: '0.04em',
@@ -102,7 +102,7 @@ export default function Slide06() {
                   </span>
                 )}
               </div>
-              <MonoLabel style={{ fontSize: 10, color: 'var(--color-lime)', lineHeight: 1.4 }}>
+              <MonoLabel style={{ fontSize: 12, color: 'var(--color-lime)', lineHeight: 1.4 }}>
                 {pillar.title}
               </MonoLabel>
             </div>
@@ -110,7 +110,7 @@ export default function Slide06() {
             {/* Body */}
             <p
               style={{
-                fontSize: 14.5,
+                fontSize: 17,
                 color: 'rgba(255,255,255,0.68)',
                 lineHeight: 1.8,
                 fontWeight: 400,

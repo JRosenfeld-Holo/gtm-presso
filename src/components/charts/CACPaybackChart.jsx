@@ -102,7 +102,7 @@ export default function CACPaybackChart({ data }) {
                   textAnchor="middle"
                   fill={CYAN}
                   fontFamily="MessinaSansMono, monospace"
-                  fontSize="12"
+                  fontSize="14"
                   fontWeight="600"
                   opacity={labelOpacity}
                 >
@@ -132,7 +132,7 @@ export default function CACPaybackChart({ data }) {
             textAnchor="middle"
             fill="rgba(255,255,255,0.45)"
             fontFamily="MessinaSansMono, monospace"
-            fontSize="11"
+            fontSize="13"
             letterSpacing="0.04em"
           >
             {c.quarter}

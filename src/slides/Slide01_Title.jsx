@@ -172,7 +172,7 @@ export default function Slide01() {
           style={{
             fontFamily: 'var(--font-roobert)',
             fontWeight: 400,
-            fontSize: 'clamp(16px, 1.6vw, 20px)',
+            fontSize: 'clamp(18px, 1.8vw, 24px)',
             color: 'rgba(255,255,255,0.52)',
             lineHeight: 1.5,
             maxWidth: 500,
@@ -188,7 +188,7 @@ export default function Slide01() {
             alt="Hologram"
             style={{ height: 34, width: 'auto', display: 'block' }}
           />
-          <MonoLabel style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em' }}>
+          <MonoLabel style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em' }}>
             Highly Confidential
           </MonoLabel>
         </motion.div>

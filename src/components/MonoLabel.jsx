@@ -1,4 +1,4 @@
-export default function MonoLabel({ children, style = {}, size = 11 }) {
+export default function MonoLabel({ children, style = {}, size = 13 }) {
   return (
     <span
       style={{

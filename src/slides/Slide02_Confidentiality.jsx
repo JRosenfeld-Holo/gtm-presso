@@ -50,7 +50,7 @@ export default function Slide02() {
                 flexShrink: 0,
               }}
             />
-            <MonoLabel style={{ fontSize: 12 }}>Note to Recipient — Confidential</MonoLabel>
+            <MonoLabel style={{ fontSize: 14 }}>Note to Recipient — Confidential</MonoLabel>
           </div>
 
           <div
@@ -71,7 +71,7 @@ export default function Slide02() {
                 key={i}
                 style={{
                   fontFamily: 'var(--font-roobert)',
-                  fontSize: 13,
+                  fontSize: 15,
                   color: 'rgba(255,255,255,0.6)',
                   lineHeight: 1.7,
                   fontWeight: 400,
@@ -92,10 +92,10 @@ export default function Slide02() {
               alignItems: 'center',
             }}
           >
-            <MonoLabel style={{ fontSize: 10, color: 'rgba(255,255,255,0.3)' }}>
+            <MonoLabel style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>
               ©2026 Bank of America Corporation
             </MonoLabel>
-            <MonoLabel style={{ fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>
+            <MonoLabel style={{ fontSize: 12, color: 'rgba(255,255,255,0.2)' }}>
               All Rights Reserved
             </MonoLabel>
           </div>

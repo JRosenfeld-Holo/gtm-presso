@@ -71,7 +71,7 @@ export default function Slide04() {
             transition={{ delay: 0.85 + i * 0.1, duration: 0.4 }}
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: 13,
+              fontSize: 15,
               fontWeight: 600,
               letterSpacing: '0.10em',
               textTransform: 'uppercase',
