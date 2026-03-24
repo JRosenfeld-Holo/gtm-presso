@@ -12,23 +12,23 @@ export default function Slide06() {
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.07, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        style={{ marginBottom: 28 }}
+        style={{ marginBottom: 18 }}
       >
-        <MonoLabel style={{ display: 'block', marginBottom: 12 }}>How We Do It</MonoLabel>
+        <MonoLabel style={{ display: 'block', marginBottom: 10 }}>How We Do It</MonoLabel>
         <h2
           style={{
             fontFamily: 'var(--font-roobert)',
             fontWeight: 700,
-            fontSize: 'clamp(32px, 3.6vw, 52px)',
+            fontSize: 'clamp(26px, 3vw, 44px)',
             lineHeight: 1.08,
             letterSpacing: '-0.02em',
             maxWidth: 680,
-            marginBottom: 12,
+            marginBottom: 10,
           }}
         >
           A builder culture optimized for speed and continuous improvement
         </h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.5)', maxWidth: 660, lineHeight: 1.6 }}>
+        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', maxWidth: 660, lineHeight: 1.6 }}>
           Hologram's GTM team operates like a product team: lean, instrumented, and oriented toward
           building the systems that generate pipeline rather than just running them.
         </p>
@@ -50,18 +50,18 @@ export default function Slide06() {
             key={pillar.title}
             delay={0.2 + i * 0.1}
             style={{
-              padding: '32px 36px',
+              padding: '20px 26px',
               display: 'flex',
               flexDirection: 'column',
-              gap: 18,
+              gap: 12,
             }}
           >
             {/* Icon + title row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
               <div
                 style={{
-                  width: 56,
-                  height: 56,
+                  width: 46,
+                  height: 46,
                   borderRadius: 12,
                   border: '1px solid rgba(191,253,17,0.35)',
                   background: 'rgba(191,253,17,0.07)',
@@ -110,9 +110,9 @@ export default function Slide06() {
             {/* Body */}
             <p
               style={{
-                fontSize: 17,
+                fontSize: 15,
                 color: 'rgba(255,255,255,0.68)',
-                lineHeight: 1.8,
+                lineHeight: 1.65,
                 fontWeight: 400,
                 flex: 1,
               }}

@@ -12,28 +12,28 @@ export default function Slide03() {
         initial={{ opacity: 0, y: -18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.08, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        style={{ marginBottom: 32 }}
+        style={{ marginBottom: 20 }}
       >
-        <MonoLabel style={{ marginBottom: 14, display: 'block', color: 'var(--color-lime)' }}>What We Do</MonoLabel>
+        <MonoLabel style={{ marginBottom: 10, display: 'block', color: 'var(--color-lime)' }}>What We Do</MonoLabel>
         <h2
           style={{
             fontFamily: 'var(--font-roobert)',
             fontWeight: 700,
-            fontSize: 'clamp(36px, 4vw, 56px)',
+            fontSize: 'clamp(28px, 3.2vw, 46px)',
             lineHeight: 1.08,
             letterSpacing: '-0.02em',
             maxWidth: 700,
-            marginBottom: 14,
+            marginBottom: 10,
           }}
         >
           A data-driven GTM system built for predictable pipeline.
         </h2>
         <p
           style={{
-            fontSize: 18,
+            fontSize: 16,
             color: 'rgba(255,255,255,0.55)',
             maxWidth: 660,
-            lineHeight: 1.65,
+            lineHeight: 1.6,
             fontWeight: 400,
           }}
         >
@@ -43,14 +43,14 @@ export default function Slide03() {
       </motion.div>
 
       {/* Cards */}
-      <div style={{ display: 'flex', gap: 18, flex: 1, minHeight: 0 }}>
+      <div style={{ display: 'flex', gap: 14, flex: 1, minHeight: 0 }}>
         {CAPABILITIES.map((cap, i) => (
           <GlowCard
             key={cap.num}
             delay={0.2 + i * 0.09}
             style={{
               flex: 1,
-              padding: '32px 28px',
+              padding: '20px 22px',
               display: 'flex',
               flexDirection: 'column',
               gap: 0,
@@ -61,11 +61,11 @@ export default function Slide03() {
             <div
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: 72,
+                fontSize: 54,
                 fontWeight: 600,
                 color: 'var(--color-lime)',
                 lineHeight: 1,
-                marginBottom: 20,
+                marginBottom: 14,
                 textShadow: '0 0 30px rgba(191,253,17,0.45)',
               }}
             >
@@ -78,12 +78,12 @@ export default function Slide03() {
                 width: '100%',
                 height: 1,
                 background: 'rgba(191,253,17,0.12)',
-                marginBottom: 16,
+                marginBottom: 12,
               }}
             />
 
             {/* Title */}
-            <MonoLabel style={{ fontSize: 12, color: 'var(--color-lime)', marginBottom: 12, display: 'block' }}>
+            <MonoLabel style={{ fontSize: 12, color: 'var(--color-lime)', marginBottom: 10, display: 'block' }}>
               {cap.title}
             </MonoLabel>
 
