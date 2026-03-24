@@ -64,7 +64,7 @@ export const PILLARS = [
   },
   {
     title: 'CONTENT & BRAND',
-    items: ['Content engineering', 'AEO + SEO optimization', 'Brand voice + assets', 'LLM + Custom MCP', 'ABM decks + pages'],
+    items: ['Content engineering', 'AEO + SEO optimization', 'Brand voice + assets', 'LLM + Custom MCP', 'ABM'],
   },
   {
     title: 'PROSPECTING & OUTREACH',
